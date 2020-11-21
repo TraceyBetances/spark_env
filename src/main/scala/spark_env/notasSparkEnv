@@ -1,0 +1,83 @@
+lunes 23 10:30 entrevista cliente big data
+------------------------------------------
+
+-- el lenguaje de scala tiene varios tipos de formato o tipo de datos (int, char(1 caracter), string(varios caracteres), boolean(true/false), sort(4#), long(+4#), float(¿?), double(decimales)
+- diferencia entre var y val
+	- var puede variar porque es una variable
+	- val no puede variar porque es un valor
+- scala sabe deducir los tipos de dato
+- compilador es un traductor del lenguaje que escribes al leguaje maquina ( error compilador:detecta el error antes de ejecutar ; error run:una vez ejecutado )
+- side efect son utiies porque permite que veamos que hacen nuestros programas; lo hacemos con un print o viendo algo en la pantalla. Devuelve un UNIT
+-- expresiones es el valor de algo, a cada una le puedes asignar un tipo
+- diferencia entre instrucciones y expresiones
+	- instrucciones: orden X a la maquina
+	- expresiones: es un valor
+- UNIT en Scala: es equivalente a void en Java; es toda expresion que NO devuelve ningun valor porque no
+-- las funciones empiezan con def y se componen de parametros tienen expresiones que obviamente tienen tipo
+- recursión: es la alternativa a un loop de un enfoque imperativo de programación. es el valor final de X
+- diferencia entre llamar por nombre(name) o llamar por valor(value)
+	- name: el valor del parametro que enviamos a la funcion se obtiene en el momento en que la funcion lo utiliza
+	- value: el valor del parametro que enviamos a la funcion se obtiene ANTES de que la funcion lo utilice para enviar el valor final
+- funciones de String
+	- charAt() de una cadena te devuelve el indice seleccionado
+	- substring()
+	- split()
+	- startswith()
+	- replace()
+	- tolowercase()
+	- length()
+	- toInt()
+	- reverse()
+- String Interpolation hace que puedas llamar a una varible previamente definida dentro de una cadena de strings
+- constructor de una clase, es cuando defines la clase con sus parametros fijos
+- diferencia entre parametros y campos(fields) de una clase
+	- parametros: por defecto
+	- campos: tiene que contener un VAL
+- diferencias funcionalidad a nivel de clase(class level funcionality) y entre funcionalidad a nivel de instancia(instance level funcionality)
+	- class level funcionality: es una funcionalidad que no depende de que instanciemos una clase. En JavaClassStatic
+	- instance level funcionality: para acceder a sus metodos tenemos que instanciar la clase
+- companion object(objetos compañeros) la forma de describir clases y objetos singleton dentro de mismo nombre y scope(dentro de x clase, objeto../alcance) se les denomina companion
+- singelton objetc es un objeto de scala que tiene la funcionalidad que tiene una instancia unica ya definida
+
+
+
+git
+---
+git config --global user.email "tracey_betances_92@hotmail.es"
+git config --global user.name "TraceyBetances"
+
+git remote add origin https://github.com/TraceyBetances/spark_env.git
+
+
+------------------------------------------------------------------------------------------------------------------------
+- Relacion entre Singlenton Object y Scala Class: Companion Object
+Dentro de los metodos del objeto podemos enviar instacias de su clase companion
+- Scala Aplication es un objeto de Scala con un metodo muy importante: MAIN (tiene una definicion segun una convencion
+- Herencia entre clases solo se puede heredar de una clase (single class inheritance), para heredar de mas clases hay que
+usar otro tipo de clase que se llama TRAIT
+    - Private Metod solo son accesibles dentro de la propia clase
+    - Protected Metod son accesibles desde la propia clase o desde una subclase de la principal
+    - Overwriting(sobreescritura) sirve para redefiniar lo que hace un metodo de una clase padre
+    - Substitution(polimorfismo) se puede acceder a un  metodo que tiene el mismo nombre en distintas clases enviandole una
+instancia de la clase
+- Diferencias entre overriding o overloading
+    - overLoading: crear dos o mas metodos con mismo nombre dentro de una clase
+- Abstract class en Java se llama interface, es una clase que nos permite crear metodos dentro de ella sin implementacion
+- clase TRAIT es el ultimmo tipo de clase abstracta. A diferencia de las abstract class, los trait pueden heredarse a lo largo
+de varias clases. No tienen constructores(no tiene parametros de entrada)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

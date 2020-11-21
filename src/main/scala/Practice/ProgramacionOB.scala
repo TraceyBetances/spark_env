@@ -16,8 +16,6 @@ object ProgramacionOB extends App{
 
 }
 
-  val a = 2
-
 
 class Person(name: String, age: Int) {
 
