@@ -7,6 +7,8 @@ object ProgramacionOB extends App{
   val persona3 = new Person("Croqueta ", 28)
   val persona4 = new Person("Nolletito ", 30)
 
+
+
   println(persona1.saludar())
   println(persona2.saludar())
   println(persona3.saludar())
