@@ -61,7 +61,7 @@ object TraitProcess extends TraitStructure {
     val tablaTemAccountsOK = readCSV.createOrReplaceTempView("TemAccounts")
     val insertData = spark.sql(
       s"""
-         |INSERT OVERWRITE TABLE ${nameTable}
+         |INSERT OVERWRITE TABLE ${nameDatabase}.${nameTable}
          |SELECT * FROM TemAccounts """.stripMargin)
 
     println("Datos insertados CORRECTAMENTE")
