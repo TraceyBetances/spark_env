@@ -22,7 +22,7 @@ object FuncionesConstantes {
       StructField("state", StringType, nullable = true),
       StructField("zipcode", StringType, nullable = true),
       StructField("phone_number", StringType, nullable = true),
-      StructField("create", StringType, nullable = true),
+      StructField("created", StringType, nullable = true),
       StructField("modified", StringType, nullable = true)))
   }
 
