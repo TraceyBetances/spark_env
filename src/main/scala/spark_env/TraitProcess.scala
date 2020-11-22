@@ -47,8 +47,8 @@ object TraitProcess extends TraitStructure {
          |fecha_cierre string,
          |nombre string,
          |apellido string,
-         |direccion string
-         |ciudad string
+         |direccion string,
+         |ciudad string,
          |estado string,
          |codigo_postal string,
          |telefono string,
