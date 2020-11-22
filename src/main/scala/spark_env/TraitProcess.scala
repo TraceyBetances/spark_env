@@ -55,7 +55,7 @@ object TraitProcess extends TraitStructure {
          |creacion string,
          |modificacion string)
          |STORED AS PARQUET
-         |LOCATION ${locationTableHDFS}""".stripMargin)
+         |LOCATION '${locationTableHDFS}'""".stripMargin)
 
     val tablaTemAccountsOK = readCSV.createOrReplaceTempView("TemAccounts")
     val insertData = spark.sql(
