@@ -41,7 +41,7 @@ object TraitProcess extends TraitStructure {
     val database = spark.sql(s"""create database if not exists ${nameDatabase}""")
     val createTable = spark.sql(
       s"""
-         |CREATE EXTERNAL TABLE IF NOT EXISTS ${nameTable}
+         |CREATE EXTERNAL TABLE IF NOT EXISTS ${nameDatabase}.${nameTable}
          |(numero_cuenta string,
          |fecha_creacion string,
          |fecha_cierre string,
@@ -53,7 +53,8 @@ object TraitProcess extends TraitStructure {
          |codigo_postal string,
          |telefono string,
          |creacion string,
-         |modificacion string)
+         |modificacion string,
+         |nombreApellido string)
          |STORED AS PARQUET
          |LOCATION '${locationTableHDFS}'""".stripMargin)
 
