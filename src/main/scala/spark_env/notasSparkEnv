@@ -65,6 +65,9 @@ instancia de la clase
 - Abstract class en Java se llama interface, es una clase que nos permite crear metodos dentro de ella sin implementacion
 - clase TRAIT es el ultimmo tipo de clase abstracta. A diferencia de las abstract class, los trait pueden heredarse a lo largo
 de varias clases. No tienen constructores(no tiene parametros de entrada)
+- Diferencia entre tabla interna y tabla externa de Hive
+    - Interna:
+    - Externa:
 
 
 
