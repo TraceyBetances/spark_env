@@ -35,7 +35,7 @@ object TraitProcess extends TraitStructure {
         $"created".as("creacion"),
         $"modified".as("modificacion"))
       .withColumn("nombreApellido", concat_ws(" ",col("nombre"),col("apellido")))
-      .withColumn("city", upper(col("city")))
+      .withColumn("ciudad", upper(col("ciudad")))
 
 
     val database = spark.sql(s"""create database if not exists ${nameDatabase}""")
