@@ -30,11 +30,11 @@ object TraitProcess extends TraitStructure {
         $"address".as("direccion"),
         $"city".as("ciudad"),
         $"state".as("estado"),
-        $"zipcode".as("codigo_posta"),
+        $"zipcode".as("codigo_postal"),
         $"phone_number".as("telefono"),
         $"created".as("creacion"),
         $"modified".as("modificacion"))
-      .withColumn("nombreApellido", concat_ws(" ",col("first_name"),col("last_name")))
+      .withColumn("nombreApellido", concat_ws(" ",col("nombre"),col("apellido")))
       .withColumn("city", upper(col("city")))
 
 
